@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- Define your beans here -->
+
+	<!-- define the dependency -->
+	<bean id="entryServiceXML"
+		class="by.htp.extratask3.service.impl.EntryServiceXMLImpl">
+	</bean>
+
+	<bean id="xmlRepositoryDAO" 
+		class="by.htp.extratask3.dao.impl.XMLRepositoryDAO">
+	</bean>
+	
+	<bean id="commandDirector" 
+		class="by.htp.extratask3.controller.command.CommandDirector">
+	</bean>
+
+
+	<bean id="creationEntryCommand" 
+		class="by.htp.extratask3.controller.command.CreationEntryCommand">
+	</bean>
+	
+	<bean id="searchingEntryCommand" 
+		class="by.htp.extratask3.controller.command.SearchingEntryCommand">
+	</bean>
+	
+	
+	
+</beans>
+
+
+
+
+
