@@ -19,6 +19,7 @@ public class XMLNewsRepository extends XMLRepository{
 	@XmlElement(name = "category")
 	private List<XMLNewsCategory> category = new ArrayList<XMLNewsCategory>();
 
+	
 	public XMLNewsRepository() {}
 		
 	public List<XMLCategory> getCategories() {
